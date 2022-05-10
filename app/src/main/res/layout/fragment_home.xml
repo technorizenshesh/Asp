@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <RelativeLayout
+        android:background="@mipmap/bg_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:padding="@dimen/_15sdp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_110sdp"
+                    />
+
+                <TextView
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/tracking"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                </TextView>
+
+                <TextView
+                    android:fontFamily="@font/poppinsregular"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/enter_the_order_number_you_would_like_to_track_in_the_form_below"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                </TextView>
+
+                <TextView
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Tracking Number"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                </TextView>
+
+                <EditText
+                    android:text="12345"
+                    android:id="@+id/edtOrdernumber"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:inputType="text"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:hint="Tracking Number"
+                    android:background="@drawable/border_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    >
+                </EditText>
+
+                <RelativeLayout
+                    android:id="@+id/RRTrack"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/border_white_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    >
+
+
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Track my order"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                    </TextView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RRAbouts"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/border_white_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    >
+
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="ABOUT US"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                    </TextView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+
+
+
+</layout>

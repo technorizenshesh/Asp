@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.my.asp.Fragment.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_tracking"
+            app:destination="@id/tracking" />
+        <action
+            android:id="@+id/action_navigation_home_to_abouts"
+            app:destination="@id/abouts" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_Product"
+            app:destination="@id/navigation_Product" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_Product"
+        android:name="com.my.asp.Fragment.ProductFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_Contacts"
+        android:name="com.my.asp.Fragment.ContactFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_contact" />
+
+ <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.my.asp.Fragment.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+ <fragment
+        android:id="@+id/tracking"
+        android:name="com.my.asp.Fragment.TrackFragment"
+        android:label="@string/tracking"
+        tools:layout="@layout/fragment_traking" >
+     <action
+         android:id="@+id/action_tracking_to_navigation_Contacts"
+         app:destination="@id/navigation_Contacts" />
+ </fragment>
+
+    <fragment
+        android:id="@+id/news"
+        android:name="com.my.asp.Fragment.NewsFragment"
+        android:label="@string/tracking"
+        tools:layout="@layout/fragment_news" />
+
+    <fragment
+        android:id="@+id/abouts"
+        android:name="com.my.asp.Fragment.AboutsFragment"
+        android:label="@string/tracking"
+        tools:layout="@layout/fragment_abouts" />
+
+
+    <!--<activity
+        android:id="@+id/homeActivity"
+        android:name="com.my.asp.act.HomeActivity"
+        android:label="HomeActivity" />-->
+
+
+</navigation>

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:background="@mipmap/bg_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ProgressBar
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/progressBar"
+            android:background="@drawable/progresh_background"
+            android:elevation="6dp"
+            android:padding="5dp"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/purple_200"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/txtEmty"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:text="No Data"
+            android:textSize="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+        </TextView>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:id="@+id/llData"
+                android:padding="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="@dimen/_16sdp"
+                    android:text="Contacts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                </TextView>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="Select the country to get the contact details of the same."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                </TextView>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@drawable/border_white"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:text="PO"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txtPo"
+                        android:textStyle="bold"
+                        android:text="Data"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@drawable/border_white"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:text="OC"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txtOC"
+                        android:textStyle="bold"
+                        android:text="Data"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@drawable/border_white"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:text="Carrier Name"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txtReadiness"
+                        android:textStyle="bold"
+                        android:text="Data"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@drawable/border_white"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:text="Expedition"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txtExpedition"
+                        android:textStyle="bold"
+                        android:text="Data"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@drawable/border_white"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:text="Tracking Number"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txtOrderNumber"
+                        android:textStyle="bold"
+                        android:text="Number"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@drawable/border_white"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:text="Arrival"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txtArrival"
+                        android:textStyle="bold"
+                        android:text="Data"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@drawable/border_white"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:text="Invoicing"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txtInvoicing"
+                        android:textStyle="bold"
+                        android:text="Data"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@drawable/border_white"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:text="Order Notes"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txtOrderNotes"
+                        android:textStyle="bold"
+                        android:text="Order Notes"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                    </TextView>
+
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/RRContact"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/border_white_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    >
+
+
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Contact"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                    </TextView>
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </RelativeLayout>
+
+
+</layout>

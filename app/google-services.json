@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "148854403008",
+    "project_id": "aspproject-2c2a9",
+    "storage_bucket": "aspproject-2c2a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148854403008:android:3d729d1ac55306f535e225",
+        "android_client_info": {
+          "package_name": "com.my.asp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148854403008-30nnnuum9i0o623ds9dfnkuiv7t322dj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.my.asp",
+            "certificate_hash": "e12ace2e84ca331354da1b1c77aff254dce8bed8"
+          }
+        },
+        {
+          "client_id": "148854403008-82qld58lr5ne0jao8u226r81aq67uhuo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.my.asp",
+            "certificate_hash": "07601957272bd2cdcf2c4b144175d46a1c7cc098"
+          }
+        },
+        {
+          "client_id": "148854403008-88bn56i9sg1e0gj05h3tebl2jrrvsqmj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPDK-9hZIE3t_HA2rL0UGuJCDvtTP95R8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148854403008-88bn56i9sg1e0gj05h3tebl2jrrvsqmj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

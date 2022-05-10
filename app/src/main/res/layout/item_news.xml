@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@drawable/border_white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/RRimgPrd"
+        android:layout_width="@dimen/_135sdp"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/img"
+            android:layout_margin="3sp"
+            android:src="@drawable/img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            >
+
+        </ImageView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_toRightOf="@+id/RRimgPrd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/txtName"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/img_serch"
+            android:layout_centerVertical="true"
+            android:text="GRUPO-ATLANTIC-CELEBRA-DIA-INTERNACIONAL-DA-MULHER"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+        </TextView>
+        <TextView
+            android:id="@+id/txtMore"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/yellow"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/img_serch"
+            android:layout_centerVertical="true"
+            android:text="@string/view_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/imgFb"
+                android:layout_centerInParent="true"
+                android:src="@drawable/fb"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                >
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/imginsta"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/insta"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                >
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/imgYoutube"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/youtube"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                >
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/imgLinkDin"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/linkedin"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                >
+
+            </ImageView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

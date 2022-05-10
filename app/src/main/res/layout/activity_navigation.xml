@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/drawer"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start"
+        android:background="@color/black"
+        >
+
+        <include
+            android:id="@+id/home"
+            layout="@layout/activity_home"
+            />
+
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/drawer_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:nestedScrollingEnabled="true"
+            android:scrollbars="vertical"
+            android:orientation="vertical"
+            >
+
+            <include
+                android:id="@+id/nav"
+                layout="@layout/activity_nav"
+                />
+
+        </LinearLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</layout>

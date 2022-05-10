@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <RelativeLayout
+        android:background="@mipmap/bg_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:layout_margin="@dimen/_10sdp"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/logo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_110sdp"
+            />
+
+    </RelativeLayout>
+
+</layout>

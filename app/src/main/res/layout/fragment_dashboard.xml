@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:background="@mipmap/bg_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ProgressBar
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/progressBar"
+            android:background="@drawable/progresh_background"
+            android:elevation="6dp"
+            android:padding="5dp"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/purple_200"
+            android:visibility="gone"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/RRSearch"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/border_white_one"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            >
+
+            <ImageView
+                android:id="@+id/img_serch"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:src="@drawable/search"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp">
+
+            </ImageView>
+
+            <EditText
+                android:id="@+id/edtSearch"
+                android:gravity="center_vertical"
+                android:background="@null"
+                android:textColorHint="@color/black"
+                android:padding="@dimen/_7sdp"
+                android:textSize="@dimen/_12sdp"
+                android:layout_toRightOf="@+id/img_serch"
+                android:layout_centerVertical="true"
+                android:hint="Search product"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+            </EditText>
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerproduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RRSearch"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:nestedScrollingEnabled="false" />
+
+       </RelativeLayout>
+
+</layout>

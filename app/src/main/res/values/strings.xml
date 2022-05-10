@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Asp</string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="home">HOME</string>
+    <string name="products">Products</string>
+    <string name="contacts">CONTACTS</string>
+    <string name="notifications">NOTIFICATIONS</string>
+    <string name="tracking">Tracking</string>
+    <string name="abouts">abouts</string>
+    <string name="enter_the_order_number_you_would_like_to_track_in_the_form_below">Enter the tracking Number you would like to track in the form below.</string>
+    <string name="view_more">VIEW MORE</string>
+    <string name="checkInternet">Please Check Your Internet Connection</string>
+</resources>

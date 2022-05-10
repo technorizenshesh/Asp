@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:background="@mipmap/bg_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ProgressBar
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/progressBar"
+            android:background="@drawable/progresh_background"
+            android:elevation="6dp"
+            android:padding="5dp"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/purple_200"
+            android:visibility="gone"
+            />
+
+        <RelativeLayout
+            android:id="@+id/RRtoolbaar"
+            android:background="@color/blue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/RRback"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/back"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    >
+
+                </ImageView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/RRback"
+                android:id="@+id/txtToolName"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            </TextView>
+
+            <RelativeLayout
+                android:id="@+id/RRsyn1"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/sync"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    >
+
+                </ImageView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/RRtoolbaar"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:padding="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/RRitem"
+                    android:background="@drawable/border_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@+id/RRimgPrd"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_blue_line"
+                        android:padding="@dimen/_2sdp">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/img"
+                            android:padding="@dimen/_3sdp"
+                            app:riv_corner_radius="@dimen/_5sdp"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img"
+                            >
+                        </com.makeramen.roundedimageview.RoundedImageView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_toLeftOf="@+id/imgDe"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_toRightOf="@+id/RRimgPrd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:id="@+id/txtName"
+                            android:fontFamily="@font/poppinsregular"
+                            android:textSize="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_toRightOf="@+id/img_serch"
+                            android:layout_centerVertical="true"
+                            android:text="Parts for Gas Engines"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+
+                        </TextView>
+                        <TextView
+                            android:visibility="gone"
+                            android:textColor="@color/yellow"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textSize="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_toRightOf="@+id/img_serch"
+                            android:layout_centerVertical="true"
+                            android:text="@string/view_more"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+
+                        </TextView>
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/imgDe"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/slider"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_50sdp"
+                        >
+
+                    </ImageView>
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:id="@+id/recyclerProductDetails"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <RelativeLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/border_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        >
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Cylinder Head"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_14sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="@string/view_more"
+                            android:textColor="@color/yellow"
+                            android:textSize="@dimen/_14sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                        </TextView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/border_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        >
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Piston"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_14sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="@string/view_more"
+                            android:textColor="@color/yellow"
+                            android:textSize="@dimen/_14sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                        </TextView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/border_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        >
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Cylinder Liner"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_14sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="@string/view_more"
+                            android:textColor="@color/yellow"
+                            android:textSize="@dimen/_14sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                        </TextView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/border_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        >
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Filters"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_14sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="@string/view_more"
+                            android:textColor="@color/yellow"
+                            android:textSize="@dimen/_14sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                        </TextView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/border_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        >
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Spark Plug"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_14sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="@string/view_more"
+                            android:textColor="@color/yellow"
+                            android:textSize="@dimen/_14sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                        </TextView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/border_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        >
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Valves"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_14sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="@string/view_more"
+                            android:textColor="@color/yellow"
+                            android:textSize="@dimen/_14sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                        </TextView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/border_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        >
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Bearing"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_14sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="@string/view_more"
+                            android:textColor="@color/yellow"
+                            android:textSize="@dimen/_14sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                        </TextView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/border_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        >
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Connecting Rod"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_14sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="@string/view_more"
+                            android:textColor="@color/yellow"
+                            android:textSize="@dimen/_14sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                        </TextView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/border_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        >
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Compensator"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_14sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="@string/view_more"
+                            android:textColor="@color/yellow"
+                            android:textSize="@dimen/_14sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                        </TextView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/border_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        >
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Others"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_14sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="@string/view_more"
+                            android:textColor="@color/yellow"
+                            android:textSize="@dimen/_14sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                        </TextView>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+
+
+</layout>
